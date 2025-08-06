@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from wmbas.com/profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 May 2025 17:23:51 GMT -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Viewer with Download</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .download-button {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 15px;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .download-button:hover {
+      background-color: #0056b3;
+    }
+
+    .responsive-iframe-container {
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .responsive-iframe-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+  <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <a class="download-button" href="Profile.pdf" download target="_blank">Download PDF</a>
+
+  <div class="responsive-iframe-container">
+    <iframe src="./Profile.pdf"></iframe>
+  </div>
+
+</body>
+
+<!-- Mirrored from wmbas.com/profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 May 2025 17:23:52 GMT -->
+
+</html>
