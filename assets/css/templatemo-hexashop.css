@@ -1937,120 +1937,49 @@ About Us Page
 }
 
 .about-us .right-content h4 {
-  font-size: 34px;
+  font-size: 22px;
   font-weight: 700;
   color: #2a2a2a;
-}
-
-.about-us .right-content span {
-  font-size: 14px;
-  color: #aaaaaa;
-  font-weight: 500;
-  display: block;
-  margin-top: 25px;
-}
-
-.about-us .right-content .quote {
-  margin-top: 25px;
-}
-
-.about-us .right-content .quote i {
-  float: left;
-  font-size: 32px;
-  margin-right: 15px;
-  margin-top: 10px;
-}
-
-.about-us .right-content .quote p {
-  font-style: italic;
-  color: #2a2a2a;
-  font-weight: 500;
+  margin-bottom: 15px;
 }
 
 .about-us .right-content p {
-  font-size: 14px;
-  color: #000000;
-  font-weight: 500;
-  display: block;
-  margin-top: 25px;
-}
-
-.about-us .right-content ul {
-  border-top: 3px dotted #eee;
-  margin-top: 30px;
-  padding-top: 30px;
-}
-
-.about-us .right-content ul li {
-  display: inline-block;
-  margin-right: 5px;
-}
-
-.about-us .right-content ul li a {
-  width: 44px;
-  height: 44px;
-  background-color: #2a2a2a;
-  color: #fff;
-  display: inline-block;
-  text-align: center;
-  line-height: 44px;
-  border-radius: 50%;
-  transition: all .5s;
-}
-
-.about-us .right-content ul li a:hover {
-  background-color: #eee;
-  color: #2a2a2a;
-}
-
-.our-team {
-  margin-top: 100px;
-  padding-top: 90px;
-  padding-bottom: 90px;
-  border-top: 3px dotted #eee;
-}
-
-.our-team .section-heading {
-  margin-bottom: 60px;
-  text-align: center;
-}
-
-.our-team .section-heading h2 {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .our-team .team-item .thumb {
   position: relative;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .our-team .team-item .thumb img {
   width: 100%;
-  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.our-team .team-item:hover .thumb img {
+  transform: scale(1.1);
 }
 
 .our-team .team-item .thumb .hover-effect {
   position: absolute;
-  background-color: rgba(0,0,0,0.9);
   width: 100%;
-  text-align: center;
+  height: 100%;
+  background-color: rgba(42, 42, 42, 0.9);
   top: 0;
-  bottom: 0;
+  left: 0;
   opacity: 0;
   visibility: hidden;
-  transition: all .3s;
+  transition: all .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.our-team .team-item .thumb:hover .hover-effect {
+.our-team .team-item:hover .thumb .hover-effect {
   opacity: 1;
   visibility: visible;
-}
-
-.our-team .team-item .thumb .hover-effect .inner-content {
-  position: absolute;
-  top: 50%;
-  text-align: center;
-  width: 100%;
-  transform: translateY(-22px);
 }
 
 .our-team .team-item .thumb .hover-effect .inner-content ul li {
@@ -2067,7 +1996,7 @@ About Us Page
   text-align: center;
   line-height: 44px;
   border-radius: 50%;
-  transition: all .3s;
+  transition: all .5s;
 }
 
 .our-team .team-item .thumb .hover-effect .inner-content ul li a:hover {
@@ -2076,67 +2005,103 @@ About Us Page
 }
 
 .our-team .team-item .down-content {
+  padding-top: 20px;
   text-align: center;
-  padding-top: 25px;
 }
 
 .our-team .team-item .down-content h4 {
-  font-size: 24px;
-  color: #2a2a2a;
+  font-size: 22px;
   font-weight: 700;
-  margin-bottom: 5px;
+  color: #2a2a2a;
 }
 
 .our-team .team-item .down-content span {
   font-size: 14px;
-  color: #a1a1a1;
-  font-weight: 500;
-  display: block;
+  color: #aaaaaa;
   font-style: italic;
 }
 
-.our-services {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  border-top: 3px dotted #eee;
-  border-bottom: 3px dotted #eee;
-}
-
-.our-services .section-heading {
-  margin-bottom: 60px;
-  text-align: center;
-}
-
-.our-services .section-heading h2 {
-  margin-bottom: 10px;
-}
-
 .our-services .service-item {
-  padding: 30px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.10);
   text-align: center;
+  padding: 30px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  transition: all 0.3s ease;
 }
 
-.our-services .service-item img {
-  width: 100%;
-  overflow: hidden;
+.our-services .service-item:hover {
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  transform: translateY(-10px);
+}
+
+.our-services .service-item .icon {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background-color: #2a2a2a;
+  color: #fff;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  font-size: 32px;
 }
 
 .our-services .service-item h4 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   color: #2a2a2a;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .our-services .service-item p {
-  margin-bottom: 25px;
+  margin-bottom: 0;
 }
 
+.why-choose-us {
+    padding: 80px 0;
+}
 
+.why-choose-us .choose-item {
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.why-choose-us .choose-item:hover {
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    transform: translateY(-10px);
+}
+
+.why-choose-us .choose-item .icon {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background-color: #2a2a2a;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    font-size: 32px;
+}
+
+.why-choose-us .choose-item h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2a2a2a;
+    margin-bottom: 15px;
+}
+
+.why-choose-us .choose-item p {
+    margin-bottom: 0;
+}
 
 /* 
 ---------------------------------------------
+Contact Us Page
+--------------------------------------------- 
+*/
 contact Us Page
 --------------------------------------------- 
 */
@@ -2207,11 +2172,68 @@ contact Us Page
   transition: all 0.3s;
 }
 
-.contact-us form button:hover {
-  background-color: #fff;
-  border: 1px solid #2a2a2a;
+.contact-us .contact-info-item .text h4 {
+  font-size: 18px;
+  font-weight: 600;
   color: #2a2a2a;
+  margin-bottom: 5px;
 }
+
+.contact-us .contact-info-item .text span {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.contact-us form#contact button:hover {
+  opacity: 0.9;
+}
+
+.contact-form {
+  background: #f8f8f8;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.form-group i {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  color: #aaa;
+}
+
+.form-group input,
+.form-group textarea {
+  padding-left: 40px;
+}
+
+.contact-info-item {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.contact-info-item .icon {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #2a2a2a;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* 
+---------------------------------------------
+Single Product Page
+--------------------------------------------- 
+*/
 
 
 /* 
